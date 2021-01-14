@@ -8,7 +8,7 @@ public class Max {
     }
 
     public static void main(String[] args) {
-        int result = Max.condition(2, 4 );
+        int result = Max.condition(4, 4 );
         System.out.println(result);
     }
 }
