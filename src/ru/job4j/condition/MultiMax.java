@@ -1,27 +1,28 @@
 package ru.job4j.condition;
 
 public class MultiMax {
-    public static int max(int first, int second, int third) {
+    public static void max(int first, int second, int third) {
         if (first >= second) {
             if (first >= third) {
-                return first;
+                System.out.println(first);
             } else {
-                return third;
+                System.out.println(third);
             }
 
         } else {
             if (second >= third) {
-                return second;
+                System.out.println(second);
             } else {
-                return third;
+                System.out.println(third);
             }
         }
     }
 
     public static void main(String[] args) {
         //System.out.println(MultiMax.max(1, 7, -3));
-        int result = MultiMax.max(1, 7, -3);
-        System.out.println(result);
+      //  int result = MultiMax.max(1, 7, -3);
+       // System.out.println(result);
+        MultiMax.max(2,5,8);
 
     }
 
