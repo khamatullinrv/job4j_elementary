@@ -1,4 +1,4 @@
-package ru.job4j.condition;
+/*package ru.job4j.condition;
 
 import org.junit.Test;
 
@@ -10,4 +10,4 @@ public class MultiMaxTest {
     public void whenSecondMax() {
         int result = MultiMax.max(1, 4, 2);
         assertThat(result, is(4));
-}
+}*/
