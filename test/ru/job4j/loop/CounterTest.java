@@ -2,11 +2,21 @@ package ru.job4j.loop;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 public class CounterTest {
 
     @Test
-    public void sumByEven() {
+    public void whenSumEvenNumbersFromOneToTenThenThirty() {
+        int rsl = Counter.sumByEven(1, 10);
+        int expected = 30;
+        assertThat(rsl, is(expected));
+    }
+    @Test
+    public void whenSumEvenNumbersFromOneToThirtyThen240() {
+        int rsl = Counter.sumByEven(1, 30);
+        int expected = 240;
+        assertThat(rsl, is(expected));
     }
 }
