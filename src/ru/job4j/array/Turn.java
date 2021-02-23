@@ -11,7 +11,7 @@ public class Turn {
         return array;
     }
     public static void main(String[] args) {
-        int[] input = new int[] {4, 1, 6, 2, 3};
+        int[] input = new int[] {4, 1, 6, 2};
         int [] newarr = back(input);
 
         for (int i = 0; i < newarr.length; i++) {
